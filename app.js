@@ -1,6 +1,0 @@
-const LF_CONFIG={firebase:{apiKey:"",authDomain:"",projectId:"",storageBucket:"",messagingSenderId:"",appId:""},api:{baseUrl:"",provider:""},cakto:{FREE_CHECKOUT:"",PRO_CHECKOUT:"",MAX_CHECKOUT:""},plans:{FREE:{credits:30,maxResults:6},PRO:{credits:100,maxResults:15},MAX:{credits:100,maxResults:50}},searchCost:6};
-const LF_STORE={get(k,d=null){try{return JSON.parse(localStorage.getItem("lf_"+k))??d}catch{return d}},set(k,v){localStorage.setItem("lf_"+k,JSON.stringify(v))}};
-document.querySelectorAll("[data-toggle]").forEach(b=>b.addEventListener("click",()=>{const i=document.getElementById(b.dataset.toggle);i.type=i.type==="password"?"text":"password";b.textContent=i.type==="password"?"Ver":"Ocultar"}));
-const menu=document.getElementById("menuBtn"); if(menu) menu.onclick=()=>document.querySelector(".sidebar")?.classList.toggle("open");
-const logout=document.getElementById("logout"); if(logout) logout.onclick=()=>{LF_STORE.set("session",null);location.href="index.html"};
-function escapeHTML(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
