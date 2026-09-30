@@ -1,1 +1,0 @@
-function openWhatsApp(phone,message=""){const digits=String(phone||"").replace(/\D/g,"");if(!digits)return;const url=`https://wa.me/${digits}?text=${encodeURIComponent(message)}`;window.open(url,"_blank","noopener")}
