@@ -1,0 +1,3 @@
+function getUser(){return LF_STORE.get("user",{name:"Visitante",plan:"FREE",credits:30,searches:[],saved:[]})}
+function refreshStats(){const u=getUser();document.getElementById("creditCount").textContent=u.credits;document.getElementById("creditStat").textContent=u.credits;document.getElementById("planName").textContent=u.plan;document.getElementById("searchCount").textContent=(u.searches||[]).length;document.getElementById("leadCount").textContent=(u.searches||[]).reduce((n,s)=>n+(s.results||[]).length,0)}
+refreshStats();

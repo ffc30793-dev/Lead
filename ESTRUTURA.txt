@@ -1,0 +1,8 @@
+LEADFINDER — ESTRUTURA PARA GITHUB
+
+Envie o CONTEÚDO desta pasta para a raiz do seu repositório GitHub.
+index.html deve ficar na raiz.
+
+Pastas: css/ js/ backend/
+
+Não é necessário enviar este ZIP para o GitHub.
